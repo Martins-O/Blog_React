@@ -28,24 +28,7 @@ const Create = () => {
                 console.log(err);
             })
 
-        // const blog = {title, content, author};
-
         setIsPending(true);
-
-
-        //     fetch('http://localhost:8080/api/v1/blogs', {
-        //         method: 'POST',
-        //         headers: { "Content-Type": "application/json" },
-        //         body: JSON.stringify(blog)
-        //     }).then(response => {
-        //         if(!response.ok){
-        //             throw new Error('Error'+ response.status)
-        //         }
-        //         return response.json()
-        //         console.log('new blog added');
-        //         setIsPending(false);
-        //         navigate('/');
-        //     })
     }
 
     return (
