@@ -5,8 +5,9 @@ import useFetch from "./useFetch";
 
 
 const BlogDetails = () => {
-    const { id } = useParams();
-    const {data, error, isPending} = useFetch('http://localhost:8081/api/v1/blogs/{blogId}'+id)
+    const { author } = useParams();
+    const {data, error, isPending} = useFetch('http://localhost:8081/api/v1/blogs/{author}'+author)
+    // console.log(data)
     const navigate = useNavigate()
     const handleClick = () => {
         fetch('http://localhost:8081/ap1/v1/blogs/delete/{blogId}'+ data.id, {
